@@ -1,0 +1,69 @@
+<!-- coroseal image display -->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/truck-trailer.jpg" alt="highway" width="1100" height="500">
+      <div class="text-block">
+        <h1>Enter Your details and get your ride Estimate </h1>
+      </div>
+    </div>
+    <!-- <div class="carousel-item">
+        <img src="assets/highway.jpg" alt="truck"  width="1100" height="500">
+        <div class="text-block1">
+                <h1>Moving Across your city is now a breeze !!!!!!!!!!1</h1>
+        </div>
+      </div> -->
+  </div>
+</div>
+
+<!-- Enter get estimate details -->
+<div class="container">
+  <div class="row">
+    <form [formGroup]="homeForm" (ngSubmit)="onGetEstimate()">
+      <div class="row" style="padding-top:20px">
+        <div class="col-lg-2">
+             <div class="form-group" >
+            <label for="sel1">Select City</label>
+            <select class="form-control" id="sel1"
+              (change)="onchangedata($event)" formControlName="city">
+              <option selected>Select</option>
+              <option *ngFor="let item of dropdownItems">{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div  class="form-group">
+            <label for="{{name}}">Source</label>
+            <input type="text"  placeholder="Enter pickup Location" list="codes" (change)="saveSourceCode($event)" formControlName="Source" class="form-control">
+            <datalist id="codes">
+              <option *ngFor="let c of getpickUpDetails">{{c}}</option>
+            </datalist>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="form-group" >  
+            <label for="{{name}}">Destination</label>
+            <input placeholder="Enter drop location" type="text" list="codes" (change)="saveDestCode($event)" formControlName="Destination" class="form-control">
+            <datalist id="codes">
+              <option *ngFor="let c of getpickUpDetails">{{c}}</option>
+            </datalist>
+          </div>
+        </div>
+        <div class="col-lg-2">
+           <app-input [labelName]="'Your Name'" [name]="'YourName'"
+            [formGroup]="homeForm"></app-input>
+         </div>
+        <div class="col-lg-2">
+          <app-input [labelName]="'MobileNo'" [name]="'MobileNo'"
+            [formGroup]="homeForm"></app-input>
+        </div>
+        <div class="col-lg-2 mt31">
+          <button type="submit" class="btn btn-primary">GET Estimate</button>
+        </div>
+       
+      </div>
+    </form>
+  </div>
+</div>

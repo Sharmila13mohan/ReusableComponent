@@ -1,0 +1,94 @@
+{
+  "location": [
+    "Ahamadabad",
+    "Amrister",
+    "Bangalore",
+    "Chennai",
+    "Cochin",
+    "Delhi",
+    "Hyderabad",
+    "Mumbai"
+  ],
+  "pickUpData": [
+    {
+      "id": "Bangalore",
+      "address": [
+        "ElectronicCity, Bangalore,Karnataka",
+        "Marathalli, Bangalore,Karnataka",
+        "Bohmnahalli, Bangalore,Karnataka",
+        "WhiteField, Bangalore,Karnataka"
+      ]
+    },
+    {
+      "id": "Mumbai",
+      "address": [
+        "MumbaiCentral, Mumbai,Maharastra",
+        "Ayyappa Temple, Shanti Vihar, Mira Road, Thane, Maharashtra, India",
+        "Shivaji Park, Dadar West, Dadar, Mumbai, Maharashtra, India",
+        "Temple View I, Malad, Panch Bawadi, Malad East, Mumbai, Maharashtra, India"
+      ]
+    },
+    {
+      "location": "chennai"
+    }
+  ],
+  "userdata": [
+    {
+      "pickUpLocation": "Bohmnahalli, Bangalore,Karnataka",
+      "dropLocation": "WhiteField, Bangalore,Karnataka",
+      "name": "kabilan",
+      "mobileNo": "9600430644",
+      "id": 1
+    }
+    
+  ],
+  "truckdata": [
+    {
+      "cost": "Rs 1122",
+      "imgsrc": "card-truck.jfif",
+      "capacity": "1200kg",
+      "truckName": "SUPER ACE",
+      "size": "8.2ft x 4.9ft x 4.9ft"
+    },
+    {
+      "cost": "Rs 659",
+      "imgsrc": "card-truck1.png",
+      "capacity": "780kg",
+      "truckName": "TATA ACE",
+      "size": "7.2ft x 4.9ft x 4.9ft"
+    },
+    {
+      "cost": "Rs 459",
+      "imgsrc": "card-truck2.png",
+      "capacity": "500kg",
+      "truckName": "TATA 407",
+      "size": "9.5ft x 5.5ft x 6ft"
+    }
+  ],
+  "bookTruck": [
+    {
+      "cost": "Rs 1122",
+      "imgsrc": "card-truck.jfif",
+      "capacity": "1200kg",
+      "truckName": "SUPER ACE",
+      "size": "8.2ft x 4.9ft x 4.9ft",
+      "id": 1
+    },
+    {
+      "cost": "Rs 659",
+      "imgsrc": "card-truck1.png",
+      "capacity": "780kg",
+      "truckName": "TATA ACE",
+      "size": "7.2ft x 4.9ft x 4.9ft",
+      "id": 2
+    },
+    {
+      "cost": "Rs 1122",
+      "imgsrc": "card-truck.jfif",
+      "capacity": "1200kg",
+      "truckName": "SUPER ACE",
+      "size": "8.2ft x 4.9ft x 4.9ft",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<!-- reusable table -->
+<div class="container">
+    <h2>{{tableName}}</h2>
+       <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th *ngFor = "let head of headerItems" >{{head}}</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let itm of bodyItems">
+          <td *ngFor = "let head of headerItems" >{{itm[head]}}</td>
+          <td *ngIf="editbtn">
+              <button type="button" class="btn btn-primary">Edit</button>
+          </td>
+        </tr>
+     </tbody>
+    </table>
+  </div>

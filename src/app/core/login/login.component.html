@@ -1,0 +1,20 @@
+<!-- login template -->
+<div class="login-page">
+    <div class="form">
+      <form class="register-form" *ngIf="register">
+        <input type="text" [(ngModel)]="data.name" placeholder="name"/>
+        <input type="password" [(ngModel)]="data.password" placeholder="password"/>
+        
+        <input type="text" [(ngModel)]="data.email" placeholder="email address"/>
+        <button (click)="createLoginClick(data)">create</button>
+        <p class="message">Already registered? <a  [routerLink]="" (click) = "createAccount('registerclk')">Sign In</a></p>
+     
+      </form>
+      <form class="login-form" *ngIf="login">
+        <input type="text" [(ngModel)]="data.username" placeholder="username"/>
+        <input type="password" [(ngModel)]="data.password" placeholder="password"/>
+        <button>login</button>
+        <p class="message">Not registered?<a [routerLink]="" (click) = "createAccount('loginclk')">Create an account </a></p>
+      </form>
+    </div>
+  </div>

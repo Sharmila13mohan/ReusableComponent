@@ -1,0 +1,12 @@
+<!-- input text box -->
+<div *ngIf="formGroup" class="form-group" [formGroup]="formGroup">
+    <label for="{{name}}">{{labelName}}</label>
+    <input [attr.type]="type || 'text'" id="{{name}}" [formControlName]="name"  [attr.placeholder]="labelName"
+        class="form-control" />
+</div>
+
+<!-- <div *ngIf="formGroup" class="form-group" [formGroup]="formGroup">
+    <label for="{{name}}">{{labelName}}</label>
+    
+        <input class="form-control"  id="{{name}}" [formControlName]="name"  [attr.placeholder]="labelName" [attr.type]="type || 'text'" size="30" pInputText> 
+</div> -->

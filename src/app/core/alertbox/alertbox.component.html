@@ -1,0 +1,9 @@
+<p-dialog header="{{alertHeader}}" [(visible)]="displayAlert" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" 
+        [maximizable]="true" [baseZIndex]="10000">
+    <p>{{alertBody}}</p>
+        <p-footer>
+            <button type="button" pButton icon="pi pi-check" (click)="displayAlert=false" label="ok"></button>
+          
+        </p-footer>
+</p-dialog>
+

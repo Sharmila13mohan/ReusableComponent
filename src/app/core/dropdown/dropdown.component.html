@@ -1,0 +1,10 @@
+  <!-- dropdown -->
+
+  <div class="form-group">
+        <label for="sel1">{{labelDrop}}</label>
+        <select class="form-control" id="sel1">
+            <option selected>Select</option>
+          <option *ngFor=" let item of dropItems" >{{item}}</option>
+         
+        </select>
+      </div>

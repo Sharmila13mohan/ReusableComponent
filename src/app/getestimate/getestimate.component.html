@@ -1,0 +1,33 @@
+<div class="container">
+    <!-- reusable component table called to display pick up and drop location -->
+    <div class="row" style="margin-top:10px;">
+        <app-tables  [editbtn]="false"
+            [headerItems]="tableHeader"
+            [bodyItems]="tblbody"></app-tables>
+    </div>
+    
+
+ <!-- truck details displayed in card deck -->
+    <div class= row >
+        <div class="card-deck">
+            <div class="card bg-light mb-3" style="max-width: 18rem;" *ngFor ="let data of truckData">
+                <div class="card-header" >{{data.truckName}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{data.cost}}</h5>
+                    <img style="width: 105%;" src ="assets/{{data.imgsrc}}" alt="Card image cap" height='' width= ''>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Capacity : {{data.capacity}}</small><br>
+                    <small class="text-muted">Size : {{data.size}}</small>
+                    <button type="submit" class="btn btn-success ml13" (click)="onBookowClick(data)">Book Now</button>
+                </div>
+                
+            </div>
+           
+        </div>
+       
+    </div>
+</div>
+
+<!-- Alert pop up display usinf viewChid in ts file -->
+<app-alertbox #alertBox [alertHeader] = "'Success'" [alertBody]="alertmsg"></app-alertbox>
